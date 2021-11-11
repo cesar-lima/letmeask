@@ -6,7 +6,7 @@ export function Home(){
     return (
         <div>
             <aside>
-                <img src={illustrationimg} alt="ilustração simbolizando perguntas e respostas" />
+                <img src={illustrationimg} alt="Imagem simbolizando perguntas e respostas" />
                 <strong>Crie salas de Q&amp;A ao vivo</strong>
                 <p>Tire dúvidas da sua audiência em tempo real</p>
             </aside>
