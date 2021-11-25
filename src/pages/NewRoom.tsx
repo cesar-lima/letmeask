@@ -8,12 +8,7 @@ import '../styles/auth.scss'
 import { Button } from '../components/button';
 
 export function NewRoom() {
-    const navigate = useNavigate();
-
-    function navigateToNewRoom(){
-        navigate('/rooms/new');
-    }
-
+ 
     return (
         <div id="page-auth">
             <aside>
