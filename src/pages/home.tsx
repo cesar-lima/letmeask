@@ -1,6 +1,6 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-import { auth, database, firebase } from '../services/firebase';
+import { database } from '../services/firebase';
 
 import illustrationimg from '../assets/images/illustration.svg';
 import logoimg from '../assets/images/logo.svg';
@@ -34,6 +34,11 @@ export function Home(){
 
         if (!roomRef.exists()){
             alert('room does not exists.');
+            return;
+        }
+
+        if (roomRef.val().endedAt) {
+            alert('Room does not exist.');
             return;
         }
 
